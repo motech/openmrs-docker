@@ -6,7 +6,7 @@ ADD openmrs_dump.sql /root/openmrs_dump.sql
 
 RUN apt-get update; \
   apt-get install -y curl openjdk-7-jre tomcat7; \
-  curl -L http://sourceforge.net/projects/openmrs/files/releases/OpenMRS_1.9.7/openmrs.war/download \
+  curl -L https://sourceforge.net/projects/openmrs/files/releases/OpenMRS_Platform_1.11.6/openmrs.war/download \
        -o /var/lib/tomcat7/webapps/openmrs.war; \
   mkdir /var/lib/OpenMRS; \
   mkdir /usr/share/tomcat7/.OpenMRS; \
