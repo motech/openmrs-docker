@@ -11,8 +11,8 @@ RUN apt-get update; \
   mkdir /var/lib/OpenMRS; \
   mkdir /usr/share/tomcat7/.OpenMRS; \
   mkdir /usr/share/tomcat7/.OpenMRS/modules; \
-  curl -L http://modules.openmrs.org/modulus/api/releases/1138/download/webservices.rest-omod-2.9.omod \
-       -o /usr/share/tomcat7/.OpenMRS/modules/webservices.rest-omod-2.9.omod; \
+  curl -L "https://drive.google.com/uc?export=download&id=0B4MuNrgt176HMG9VTTF4UnduYmM" \
+       -o /usr/share/tomcat7/.OpenMRS/modules/webservices.rest-omod-2.17.SNAPSHOT.omod; \
   apt-get install -y mysql-server; \
   chown tomcat7:tomcat7 /var/lib/tomcat7/openmrs-runtime.properties /var/lib/OpenMRS /usr/share/tomcat7/.OpenMRS; \
   chmod +x /root/run.sh
